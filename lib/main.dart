@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Airtime.dart';
 import 'transfer.dart';
+import 'savescreen.dart';
 
 void main() => runApp(miapp());
 
@@ -156,7 +157,13 @@ class MIFUND extends StatelessWidget {
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.purpleAccent),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Savescreen(),
+                          ));
+                    },
                     child: Column(
                       children: [
                         Padding(
